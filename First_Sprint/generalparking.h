@@ -1,6 +1,6 @@
 // Project: Parking Application
 // Author: Ricky Rambo
-// Last Modified: 2/11/2016
+// Last Modified: 2/19/2016
 // Sprint: 1
 
 // Under Construction
@@ -14,12 +14,12 @@
 class GeneralParking : public Parking
 {
 public:
-    GeneralParking(string location, unsigned int priority, bool aisle, bool occupancy = false);
+    GeneralParking(string aisleLetter, string aisleNumber, string floorLevel, unsigned int priority, bool aisle, bool occupancy = false);
     GeneralParking(const GeneralParking&);
 
     bool isAisle();
 
-    string type();
+    string getParkingType();
 
 protected:
     bool m_aisle;

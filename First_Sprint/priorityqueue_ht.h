@@ -22,16 +22,16 @@ private:
         int index,
             priority;
 
-        element(int a, int b) {
-            index = a;
-            priority = b;
+        element(int i, int p) {
+            index = i;
+            priority = p;
         }
     };
 
 public:
     PriorityQueue_HT();
 
-    void insert(int, int);
+    void insert(int index, int priority);
 
     int remove();
     int remove(int index, int priority);

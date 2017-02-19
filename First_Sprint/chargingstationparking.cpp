@@ -1,6 +1,6 @@
 // Project: Parking Application
 // Author: Ricky Rambo
-// Last Modified: 2/11/2016
+// Last Modified: 2/19/2016
 // Sprint: 1
 
 // Under Construction
@@ -9,12 +9,12 @@
 
 const string ChargingStationParking::m_ID_type = "Charging Station Parking";
 
-ChargingStationParking::ChargingStationParking(string location, unsigned int priority, bool occupancy)
-    : Parking(location, priority, occupancy)
+ChargingStationParking::ChargingStationParking(string aisleLetter, string aisleNumber, string floorLevel, unsigned int priority, bool occupancy)
+    : Parking(aisleLetter, aisleNumber, floorLevel, priority, occupancy)
 {
 
 }
 
-string ChargingStationParking::type() {
+string ChargingStationParking::getParkingType() {
     return string("Charging Station Parking");
 }

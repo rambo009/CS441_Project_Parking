@@ -1,55 +1,65 @@
 // Project: Parking Application
 // Author: Ricky Rambo
-// Last Modified: 2/11/2016
+// Last Modified: 2/19/2016
 // Sprint: 1
 
 // Under Construction
 
 #include <QCoreApplication>
+
 #include "generalparking.h"
 #include "parking.h"
 #include "lot.h"
+#include "lotmanager.h"
 
 #include "priorityqueue_ht.h"
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-    PriorityQueue_HT pq;
 
-    for(int i = 0; i < 1000; i++)
-        pq.insert(i, i);
+    LotManager lm;
+    vector<ParkingRecord> records;
 
-    for(int i = 0; i < 1000; i++)
-        cout << pq.remove() << endl;
+    for(int k = 0; k < 10; k++) {
 
-    /*
-    Lot *lot_A = new Lot;
-    QCoreApplication a(argc, argv);
-    GeneralParking park1("hello", 1, false);
-    GeneralParking park2("hel", 2, false);
-    GeneralParking park3("hell2", 1, false);
+        for(int i = 0; i < 60; i++) {
+            ParkingRecord record = lm.getNextGeneralParking();
+            cout << record.getAllInfo() << endl;
+            records.push_back(record);
+        }
 
-    lot_A->insert(park1);
-    lot_A->insert(park2);
-    lot_A->insert(park3);
+        for(int i = 0; i < 30; i++) {
+            ParkingRecord record = lm.getNextFacultyParking();
+            cout << record.getAllInfo() << endl;
+            records.push_back(record);
+        }
 
-    //cout << lot_A->getNextGeneralParking().getLocation() << endl;
+        for(int i = 0; i < 15; i++) {
+            ParkingRecord record = lm.getNextHandicapParking();
+            cout << record.getAllInfo() << endl;
+            records.push_back(record);
+        }
 
-    GeneralParking *parks[10];
-    for(int i = 0; i < 10; i++) {
-        parks[i] = new GeneralParking(std::to_string(i), i, false);
+        for(int i = 0; i < 20; i++) {
+            ParkingRecord record = lm.getNextCarpoolParking();
+            cout << record.getAllInfo() << endl;
+            records.push_back(record);
+        }
+
+        for(int i = 0; i < 5; i++) {
+            ParkingRecord record = lm.getNextChargingStationParking();
+            cout << record.getAllInfo() << endl;
+            records.push_back(record);
+        }
+
+        while(!records.empty()) {
+            ParkingRecord record = records.back();
+            lm.freedParking(record);
+            records.pop_back();
+        }
     }
-
-    lot_A->insert(parks, 10);
-    Parking *p = (lot_A->getNextGeneralParking());
-    cout << p->getOccupancy() << endl;
-    lot_A->freedParking(p->getLocation());
-    cout << p->getOccupancy() << endl;
-
-    delete lot_A;
-    cout << "it works" << endl;
-    return a.exec(); */
 }

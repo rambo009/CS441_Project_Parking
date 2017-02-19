@@ -1,6 +1,6 @@
 // Project: Parking Application
 // Author: Ricky Rambo
-// Last Modified: 2/11/2016
+// Last Modified: 2/19/2016
 // Sprint: 1
 
 // Under Construction
@@ -9,12 +9,12 @@
 
 const string FacultyParking::m_ID_type = "Faculty Parking";
 
-FacultyParking::FacultyParking(string location, unsigned int priority, bool occupancy)
-    : Parking(location, priority, occupancy)
+FacultyParking::FacultyParking(string aisleLetter, string aisleNumber, string floorLevel, unsigned int priority, bool occupancy)
+    : Parking(aisleLetter, aisleNumber, floorLevel, priority, occupancy)
 {
 
 }
 
-string FacultyParking::type() {
+string FacultyParking::getParkingType() {
     return string("Faculty Parking");
 }

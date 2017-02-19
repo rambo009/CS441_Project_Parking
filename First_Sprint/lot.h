@@ -1,6 +1,6 @@
 // Project: Parking Application
 // Author: Ricky Rambo
-// Last Modified: 2/11/2016
+// Last Modified: 2/19/2016
 // Sprint: 1
 
 // Under Construction
@@ -19,11 +19,13 @@ using namespace std;
 #include "handicapparking.h"
 #include "chargingstationparking.h"
 #include "carpoolparking.h"
+#include "parkingrecord.h"
+#include "priorityqueue_ht.h"
 
 class Lot
 {
 public:
-    Lot();
+    Lot(string name);
     ~Lot();
 
     // These methods/functions are to insert parking types into
@@ -45,11 +47,11 @@ public:
     void insert(CarpoolParking**, unsigned int quantity);
 
 
-    GeneralParking* getNextGeneralParking();
-    FacultyParking getNextFacultyParking();
-    HandicapParking getNextHandicapParking();
-    ChargingStationParking getChargingStationParking();
-    CarpoolParking getCarpoolParking();
+    ParkingRecord getNextGeneralParking();
+    ParkingRecord getNextFacultyParking();
+    ParkingRecord getNextHandicapParking();
+    ParkingRecord getChargingStationParking();
+    ParkingRecord getCarpoolParking();
 
     void freedParking(string location);
 
@@ -73,9 +75,16 @@ private:
     unsigned int m_relativeIndexChargingStationParking;
     unsigned int m_relativeIndexCarPoolParking;
 
-
-
     map<string, int> m_mapParkTable;
+
+    PriorityQueue_HT m_general_pQueue;
+    PriorityQueue_HT m_faculty_pQueue;
+    PriorityQueue_HT m_handicap_pQueue;
+    PriorityQueue_HT m_chargingStation_pQueue;
+    PriorityQueue_HT m_carpool_pQueue;
+
+
+    string m_name;
 };
 
 #endif // LOT_H

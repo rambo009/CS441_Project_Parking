@@ -1,6 +1,6 @@
 // Project: Parking Application
 // Author: Ricky Rambo
-// Last Modified: 2/11/2016
+// Last Modified: 2/19/2016
 // Sprint: 1
 
 // Under Construction
@@ -17,19 +17,30 @@ using namespace std;
 class Parking
 {
 public:
-    Parking(string location, unsigned int priority, bool occupancy = false);
+    Parking(string aisleLetter, string aisleNumber, string floorLevel, unsigned int priority, bool occupancy = false);
     Parking(const Parking&);
+    virtual ~Parking();
 
-    virtual string type() = 0;
+    virtual string getParkingType() = 0;
+
+    string getAisleLetter();
+    string getAisleNumber();
+    string getFloorLevel();
 
     string getLocation();
+
     unsigned int getPriority();
     bool getOccupancy();
 
     void setOccupancy(bool);
 
 protected:
+    string m_aisleLetter;
+    string m_aisleNumber;
+    string m_floorLevel;
+
     string m_location;
+
     unsigned int m_priority;
     bool m_occupancy;
 };

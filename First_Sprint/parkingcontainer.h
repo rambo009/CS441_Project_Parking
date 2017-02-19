@@ -1,13 +1,10 @@
 // Project: Parking Application
 // Author: Ricky Rambo
-// Last Modified: 2/11/2016
+// Last Modified: 2/19/2016
 // Sprint: 1
 
 // Under Construction
 
-// A container to store all the different types of parking.
-// This implementation is based on the stack that can never pop
-// and element.
 
 #ifndef PARKINGCONTAINER_H
 #define PARKINGCONTAINER_H

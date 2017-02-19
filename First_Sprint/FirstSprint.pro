@@ -17,7 +17,9 @@ SOURCES += main.cpp \
     handicapparking.cpp \
     chargingstationparking.cpp \
     carpoolparking.cpp \
-    priorityqueue_ht.cpp
+    priorityqueue_ht.cpp \
+    lotmanager.cpp \
+    parkingrecord.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -39,4 +41,6 @@ HEADERS += \
     handicapparking.h \
     chargingstationparking.h \
     carpoolparking.h \
-    priorityqueue_ht.h
+    priorityqueue_ht.h \
+    lotmanager.h \
+    parkingrecord.h

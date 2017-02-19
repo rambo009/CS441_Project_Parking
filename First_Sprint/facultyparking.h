@@ -1,6 +1,6 @@
 // Project: Parking Application
 // Author: Ricky Rambo
-// Last Modified: 2/11/2016
+// Last Modified: 2/19/2016
 // Sprint: 1
 
 // Under Construction
@@ -11,12 +11,15 @@
 
 #include "parking.h"
 
-class FacultyParking : public Parking
-{
-public:
-    FacultyParking(string location, unsigned int priority, bool occupancy = false);
+// need to add service, manitance, and police classes
 
-    string type();
+class FacultyParking : public Parking
+{   
+public:
+    FacultyParking(string aisleLetter, string aisleNumber, string floorLevel, unsigned int priority, bool occupancy = false);
+
+    string getParkingType();
+
 
 private:
     static const string m_ID_type;
