@@ -12,3 +12,12 @@ assignmentWindow::~assignmentWindow()
 {
     delete ui;
 }
+
+void assignmentWindow::setParkingRecord(ParkingRecord parkingRecord) {
+    m_parkingRecord = parkingRecord;
+}
+
+void assignmentWindow::updateScreen() {
+    ui->aisleAssignmentLabel->setText(m_parkingRecord.getAisleLetter());
+    ui->numberAssignmentLabel->setText(m_parkingRecord.getAisleNumber());
+}

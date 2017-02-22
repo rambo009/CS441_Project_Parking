@@ -29,14 +29,35 @@ SOURCES += main.cpp\
     employeewindow.cpp \
     assignmentwindow.cpp \
     handicapwindow.cpp \
-    carpoolwindow.cpp
+    carpoolwindow.cpp \
+    carpoolparking.cpp \
+    chargingstationparking.cpp \
+    facultyparking.cpp \
+    generalparking.cpp \
+    handicapparking.cpp \
+    lot.cpp \
+    lotmanager.cpp \
+    parking.cpp \
+    parkingrecord.cpp \
+    priorityqueue_ht.cpp
 
 HEADERS  += mainwindow.h \
     generalwindow.h \
     employeewindow.h \
     assignmentwindow.h \
     handicapwindow.h \
-    carpoolwindow.h
+    carpoolwindow.h \
+    carpoolparking.h \
+    chargingstationparking.h \
+    facultyparking.h \
+    generalparking.h \
+    handicapparking.h \
+    lot.h \
+    lotmanager.h \
+    parking.h \
+    parkingcontainer.h \
+    parkingrecord.h \
+    priorityqueue_ht.h
 
 FORMS    += mainwindow.ui \
     generalwindow.ui \

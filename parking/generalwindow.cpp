@@ -34,11 +34,17 @@ void generalWindow::on_handicapButton_clicked()
 
 void generalWindow::on_chargingButton_clicked()
 {
+    ParkingRecord parkingRecord = m_lotManager.getNextChargingStationParking();
+    assignWindow->setParkingRecord(parkingRecord);
+    assignWindow->updateScreen();
     assignWindow->show();
 }
 
 void generalWindow::on_regularButton_clicked()
 {
+    ParkingRecord parkingRecord = m_lotManager.getNextGeneralParking();
+    assignWindow->setParkingRecord(parkingRecord);
+    assignWindow->updateScreen();
     assignWindow->show();
 }
 

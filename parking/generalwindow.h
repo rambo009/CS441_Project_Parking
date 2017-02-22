@@ -6,6 +6,8 @@
 #include "carpoolwindow.h"
 #include "handicapwindow.h"
 
+#include "lotmanager.h"
+
 namespace Ui {
 class generalWindow;
 }
@@ -32,6 +34,8 @@ private:
     assignmentWindow *assignWindow;
     carpoolWindow *carWindow;
     handicapWindow *handWindow;
+
+    LotManager m_lotManager;
 };
 
 #endif // GENERALWINDOW_H
