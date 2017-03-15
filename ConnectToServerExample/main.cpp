@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
         return a.exec();
     }
 
-    // Simple qurery command to print TheTest table in a window.
+    // Simple query command to print TheTest table in a window.
     QSqlQuery query("SELECT * FROM TheTest");
     table->setColumnCount(query.record().count());
     table->setRowCount(query.size());
