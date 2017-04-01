@@ -8,16 +8,14 @@ class ParkingType
 public:
     ParkingType();
 
-    void setLotName(QString lotName);
-    QString getQueryString();
-    QString getQueryStringNew();
+    QString getQueryString(QString terminalName);
 
 protected:
     virtual void initialize() = 0;
     QString m_parkingType;
 
 private:
-    QString m_lotName;
+    QString m_terminalName;
 };
 
 #endif // PARKINGTYPE_H

@@ -25,7 +25,6 @@ private:
     Database m_database;
 
     ParkingRecord queryDatabase(ParkingType &parkingType);
-    QString queryLot();
     ParkingRecord queryParkingSpot(ParkingType &parkingType);
     void contestParkingSpot(ParkingRecord pr);
     bool finalQuery(ParkingRecord pr);

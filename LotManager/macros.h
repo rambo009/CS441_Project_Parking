@@ -10,4 +10,14 @@
 #define MAINTENANCE_PARKING "Maintenance"
 #define POLICE_PARKING "Police"
 
+#define TERMINAL_NAME_FILE_INDEX "Terminal Name = "
+#define HOST_NAME_FILE_INDEX "Host Name = "
+#define PORT_NUMBER_FILE_INDEX "Port Number = "
+#define DATABASE_NAME_FILE_INDEX "Database Name = "
+#define PASSWORD_FILE_INDEX "Password = "
+
+#define DATABASE_TYPE "QMYSQL"
+
+#define INITIALIZATION_FILENAME "initialization.txt"
+
 #endif // MACROS_H

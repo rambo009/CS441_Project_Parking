@@ -1,0 +1,5 @@
+Terminal Name = term001
+Host Name = vps120966.vps.ovh.ca
+Port Number = 3306
+Database Name = ParkingApp001
+Password = 12345

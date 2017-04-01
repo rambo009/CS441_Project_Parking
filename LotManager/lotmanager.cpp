@@ -15,17 +15,7 @@
 
 LotManager::LotManager()
 {
-    QFile file("initialization.txt");
 
-    if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
-        return;
-
-    QTextStream in(&file);
-
-    QString line = in.readLine();
-    m_lotName = line;
-
-    file.close();
 }
 
 
@@ -81,24 +71,8 @@ ParkingRecord LotManager::getNextPoliceParking()
 ParkingRecord LotManager::queryDatabase(ParkingType &parkingType)
 {
     ParkingRecord parkingRecord;
-    QString lotName = queryLot();
 
     while(true) {
-        /*
-        lotName = queryLot();
-
-        if(lotName == "")
-            return parkingRecord;
-
-        parkingType.setLotName(lotName);
-
-        parkingRecord = queryParkingSpot(parkingType);
-
-        contestParkingSpot(parkingRecord);
-
-        if(finalQuery(parkingRecord))
-            break;*/
-
         parkingRecord = queryParkingSpot(parkingType);
 
         if(parkingRecord.getLotName() == "")
@@ -111,11 +85,6 @@ ParkingRecord LotManager::queryDatabase(ParkingType &parkingType)
     }
 
     return parkingRecord;
-}
-
-QString LotManager::queryLot()
-{
-    return m_database.queueLot();
 }
 
 ParkingRecord LotManager::queryParkingSpot(ParkingType &parkingType)

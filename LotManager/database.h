@@ -9,6 +9,9 @@
 #include <QSqlError>
 #include <QtSql>
 
+#include <vector>
+using std::vector;
+
 #include <QMessageBox>
 
 class Database
@@ -16,13 +19,16 @@ class Database
 public:
     Database();
 
-    QString queueLot();
     ParkingRecord queueParking(ParkingType &pt);
     void contest(ParkingRecord pr);
     bool final(ParkingRecord pr);
 
 private:
     QSqlDatabase m_database;
+    QString m_terminalName;
+
+    vector<QString> extractLinesFromFile(QString filename);
+    QString getStringValueFromLines(vector<QString> lines, QString linesContains);
 };
 
 #endif // DATABASE_H
