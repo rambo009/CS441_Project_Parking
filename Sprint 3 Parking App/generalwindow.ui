@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>generalWindow</class>
+ <widget class="QDialog" name="generalWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainFrame
+{
+	alternate-background-color: blue;
+	background: darkblue;
+	border-radius: 10px;
+	border: 2px solid gray;
+}
+
+#textFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+}
+
+#titleLabel
+{
+	color: #fff;
+	font: bold 60px;
+	font-family: Garamond;
+}
+
+#iconLabel
+{
+	color: rgba(0,0,0,30%);
+}
+
+#buttonFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+}
+
+#regularButton
+{
+	color: #fff;
+	QGraphicsDropShadowEffect: -2px 2px #346392;
+	background-color: #ff9664;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#regularButton :hover
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#regularButton :active
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+#carpoolButton
+{
+	color: #fff;
+	QGraphicsDropShadowEffect: -2px 2px #346392;
+	background-color: #ff9664;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#carpoolButton :hover
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#carpoolButton :active
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+#handicapButton
+{
+	color: #fff;
+	QGraphicsDropShadowEffect: -2px 2px #346392;
+	background-color: #ff9664;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#handicapButton :hover
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#handicapButton :active
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+#chargingButton
+{
+	color: #fff;
+	QGraphicsDropShadowEffect: -2px 2px #346392;
+	background-color: #ff9664;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#chargingButton :hover
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#chargingButton :active
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}</string>
+  </property>
+  <widget class="QFrame" name="mainFrame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>901</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="textFrame">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>321</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="titleLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>281</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SELECT THE PARKING SPACE</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="buttonFrame">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>551</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="carpoolButton">
+     <property name="geometry">
+      <rect>
+       <x>284</x>
+       <y>10</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CARPOOL</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="handicapButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>205</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HANDICAP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chargingButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>400</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CHARGING
+STATION</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="regularButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>REGULAR</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EmployeeWindow</class>
+ <widget class="QDialog" name="EmployeeWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainFrame
+{
+	alternate-background-color: blue;
+	background: darkblue;
+	border-radius: 10px;
+	border: 2px solid gray;
+}
+
+#textFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	box-shadow: inset 0 0 0 1px #27496d;
+}
+
+#titleLabel
+{
+	color: #fff;
+	font: bold 60px;
+	font-family: Garamond;
+}
+
+#iconLabel
+{
+	color: rgba(0,0,0,30%);
+}
+
+#buttonFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	box-shadow: inset 0 0 0 1px #27496d;
+}
+
+
+
+
+#facultyButton
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 40px;
+
+	background: qlineargradient(spread:pad, x1:0.50, y1:0, x2:0.5, y2:1, stop:0.75 #6496C8, stop:1 #346392);
+}
+
+#facultyButton :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#facultyButton :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#maintenanceButton
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 30px;
+
+	background: qlineargradient(spread:pad, x1:0.50, y1:0, x2:0.5, y2:1, stop:0.75 #6496C8, stop:1 #346392);
+}
+
+#maintenanceButton :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#maintenanceButton :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#policeButton
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 40px;
+
+	background: qlineargradient(spread:pad, x1:0.50, y1:0, x2:0.5, y2:1, stop:0.75 #6496C8, stop:1 #346392);
+}
+
+#policeButton :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#policeButton:active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#serviceButton
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 40px;
+
+	background: qlineargradient(spread:pad, x1:0.50, y1:0, x2:0.5, y2:1, stop:0.75 #6496C8, stop:1 #346392);
+}
+
+#serviceButton :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#serviceButton :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+</string>
+  </property>
+  <widget class="QFrame" name="mainFrame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>901</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="textFrame">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>321</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="titleLabel">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>12</y>
+       <width>291</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SELECT THE  PARKING SPACE</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="buttonFrame">
+    <property name="geometry">
+     <rect>
+      <x>339</x>
+      <y>9</y>
+      <width>551</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="facultyButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FACULTY</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="maintenanceButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>400</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MAINTENANCE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="policeButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>205</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>POLICE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="serviceButton">
+     <property name="geometry">
+      <rect>
+       <x>284</x>
+       <y>10</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SERVICE</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

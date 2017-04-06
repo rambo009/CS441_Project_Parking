@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminWindow</class>
+ <widget class="QDialog" name="adminWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainFrame
+{
+	alternate-background-color: blue;
+	background: darkblue;
+	border-radius: 10px;
+	border: 2px solid gray;
+}
+
+#textFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	box-shadow: inset 0 0 0 1px #27496d;
+}
+
+#titleLabel
+{
+	color: #fff;
+	font: bold 60px;
+	font-family: Garamond;
+}
+
+#iconLabel
+{
+	color: rgba(0,0,0,30%);
+}
+
+#buttonFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	box-shadow: inset 0 0 0 1px #27496d;
+}
+
+
+
+
+#Button
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#Button_2
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button_2 :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button_2 :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#Button_3
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 30px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button_3 :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button_3 :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#Button_4
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button_4 :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button_4 :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#Button_5
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button_5 :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button_5:active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+</string>
+  </property>
+  <widget class="QFrame" name="mainFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-1</y>
+     <width>901</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="textFrame">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>321</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="titleLabel">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>12</y>
+       <width>311</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ADMIN CONTROL</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="buttonFrame">
+    <property name="geometry">
+     <rect>
+      <x>339</x>
+      <y>9</y>
+      <width>551</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="Button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>531</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Undefined Button</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>350</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>View Lot?</string>
+     </property>
+    </widget>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>400</y>
+       <width>156</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
