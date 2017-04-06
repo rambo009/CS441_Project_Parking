@@ -26,9 +26,6 @@ public:
 private:
     QSqlDatabase m_database;
     QString m_terminalName;
-
-    vector<QString> extractLinesFromFile(QString filename);
-    QString getStringValueFromLines(vector<QString> lines, QString linesContains);
 };
 
 #endif // DATABASE_H

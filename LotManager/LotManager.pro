@@ -17,12 +17,13 @@ SOURCES += main.cpp \
     handicapparking.cpp \
     chargingparking.cpp \
     carpoolparking.cpp \
-    facultyparking.cpp \
     serviceparking.cpp \
     maintenanceparking.cpp \
     policeparking.cpp \
     parkingtype.cpp \
-    database.cpp
+    database.cpp \
+    facultyparking.cpp \
+    databaseinitializationfilereader.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -43,10 +44,11 @@ HEADERS += \
     handicapparking.h \
     chargingparking.h \
     carpoolparking.h \
-    facultyparking.h \
     serviceparking.h \
     maintenanceparking.h \
     policeparking.h \
     parkingtype.h \
     database.h \
-    macros.h
+    macros.h \
+    facultyparking.h \
+    databaseinitializationfilereader.h
