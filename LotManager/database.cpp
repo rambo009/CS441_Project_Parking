@@ -71,5 +71,7 @@ bool Database::final(ParkingRecord parkingRecord)
                                 "WHERE Contested = '" + m_terminalName +"';";
 
     query.exec(contestCommand);
+
+    return true;
 }
 
