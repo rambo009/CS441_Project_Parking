@@ -34,7 +34,7 @@ QString DatabaseInitializationFileReader::getTerminalName() {
     return m_initializedData[TERMINAL_NAME];
 }
 
-QString DatabaseInitializationFileReader::DatabaseInitializationFileReader::getHostName() {
+QString DatabaseInitializationFileReader::getHostName() {
     return m_initializedData[HOST_NAME];
 }
 
