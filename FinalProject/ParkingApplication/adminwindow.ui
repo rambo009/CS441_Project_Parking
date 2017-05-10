@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminWindow</class>
+ <widget class="QDialog" name="adminWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainFrame
+{
+	alternate-background-color: blue;
+	background: darkblue;
+	border-radius: 10px;
+	border: 2px solid gray;
+}
+
+#textFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	box-shadow: inset 0 0 0 1px #27496d;
+}
+
+#titleLabel
+{
+	color: #fff;
+	font: bold 60px;
+	font-family: Garamond;
+}
+
+#label
+{
+	color: #fff;
+	font: bold 25px;
+	font-family: Garamond;
+}
+
+#label_2
+{
+	color: #fff;
+	font: bold 25px;
+	font-family: Garamond;
+}
+
+#iconLabel
+{
+	color: rgba(0,0,0,30%);
+}
+
+#buttonFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	box-shadow: inset 0 0 0 1px #27496d;
+}
+
+
+
+
+#pushButton
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#Button_2
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button_2 :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button_2 :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#Button_3
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 30px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button_3 :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button_3 :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#Button_4
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button_4 :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button_4 :active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+
+
+
+#Button_5
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#Button_5 :hover
+{
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#Button_5:active
+{
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+</string>
+  </property>
+  <widget class="QFrame" name="mainFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>901</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="textFrame">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>321</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="titleLabel">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>12</y>
+       <width>311</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ADMIN CONTROL</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="buttonFrame">
+    <property name="geometry">
+     <rect>
+      <x>339</x>
+      <y>9</y>
+      <width>551</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>360</y>
+       <width>221</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineLetterLocation">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>160</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelLetterLocation">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>120</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Garamond</family>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;Letter Location&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineLotName">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>90</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelLotName">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>60</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Garamond</family>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;Enter Lot:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelNumberLocation">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>190</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Garamond</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Number Location&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineNumberLocation">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>230</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelFloorLocation">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>270</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Garamond</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Floor Location&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineFloorLocation">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>310</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineLotName</tabstop>
+  <tabstop>lineLetterLocation</tabstop>
+  <tabstop>lineNumberLocation</tabstop>
+  <tabstop>lineFloorLocation</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

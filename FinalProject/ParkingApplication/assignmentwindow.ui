@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>assignmentWindow</class>
+ <widget class="QDialog" name="assignmentWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainFrame
+{
+	alternate-background-color: blue;
+	background: darkblue;
+	border-radius: 10px;
+	border: 2px solid gray;
+}
+
+#textFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+}
+
+#titleLabel
+{
+	color: #fff;
+	font: bold 75px;
+	font-family: Garamond;
+}
+
+#iconLabel
+{
+	color: rgba(0,0,0,30%);
+}
+
+#assignmentLabel
+{
+	color: #fff;
+	font: bold 50px;
+	font-family: Garamond;
+}
+
+#pushButton
+{
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+#buttonFrame
+{
+	background: qlineargradient(spread:pad, x1:0.38, y1:0, x2:0.722, y2:1, stop:0.6875 #30415D, stop:1 rgba(205, 205, 205, 255));
+
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+}
+
+#generalButton
+{
+	color: #fff;
+	border: -2px 2px #346392;
+	background-color: #ff9664;
+	text-border: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 45px;
+
+	background: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0.6875 #438496, stop:1 rgba(205, 205, 205, 155));
+}
+
+Qpushbutton:hover
+{
+	font: bold 35px;
+}
+
+#generalButton :active
+{
+	border: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+#employeeButton
+{
+	color: #fff;
+	QGraphicsDropShadowEffect: -2px 2px #346392;
+	background-color: #ff9664;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 40px;
+
+	background: qlineargradient(spread:pad, x1:0.50, y1:0, x2:0.5, y2:1, stop:0.75 #6496C8, stop:1 #346392);
+}
+
+#employeeButton :hover
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#employeeButton :active
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+#adminWindowButton
+{
+	color: #fff;
+	QGraphicsDropShadowEffect: -2px 2px #346392;
+	background-color: #ff9664;
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-family: Garamond;
+	font: bold 43px;
+
+	background: qlineargradient(spread:pad, x1:0.50, y1:0, x2:0.5, y2:1, stop:0.75 #0B3C5D, stop:1 #346392);
+}
+
+#adminWindowButton :hover
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+#adminWindowButton :active
+{
+	QGraphicsDropShadowEffect: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+</string>
+  </property>
+  <widget class="QFrame" name="mainFrame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>901</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="textFrame">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>881</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="titleLabel">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>10</y>
+       <width>851</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PLEASE PARK IN:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="assignmentLabel">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>160</y>
+       <width>361</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="buttonFrame">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>439</y>
+      <width>881</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>12</y>
+       <width>231</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Garamond</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Main Menu</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
