@@ -2,8 +2,9 @@
 ## Parking Authority
 
 ### Quick Wiki Links
-[SRS Document](https://github.com/rambo009/CS441_Project_Parking/wiki/SRS-Document)
-[Test Plan](https://github.com/rambo009/CS441_Project_Parking/wiki/Test-Plan)
+* [SRS Document](https://github.com/rambo009/CS441_Project_Parking/wiki/SRS-Document)
+
+* [Test Plan](https://github.com/rambo009/CS441_Project_Parking/wiki/Test-Plan)
 
 #### Peanut Butter Solutions Team
 Team Member | Role
