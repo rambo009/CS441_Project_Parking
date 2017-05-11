@@ -41,7 +41,7 @@ ParkingRecord Database::queueParking(ParkingType &parkingType) {
 void Database::contest(ParkingRecord parkingRecord)
 {
     QString contestCommand =    "UPDATE Lot "
-                                "SET Contested = 'Term001' "
+                                "SET Contested = '" + m_terminalName + "' "
                                 "WHERE "
                                 "Lot_Name = '" + parkingRecord.getLotName() + "' AND "
                                 "Letter_Loc = '" + parkingRecord.getAisleLetter() + "' AND "
